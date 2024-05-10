@@ -1,0 +1,51 @@
+/* styles/Header.module.css */
+
+/* styles/Header.module.css */
+.header {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #18181a;
+  border-bottom: 1px solid #eaeaea;
+  position: fixed; /* Đặt vị trí header là cố định */
+  top: 0; /* Đặt top là 0 để header được đặt ở đỉnh trang */
+  z-index: 1000; /* Đảm bảo header hiển thị trên các phần tử khác */
+}
+
+.main {
+  padding-top: 5rem; /* Để tránh chồng lên nội dung, thêm padding cho phần main */
+}
+.logo img {
+  width: 100px; /* Kích thước của logo */
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  margin-left: auto;
+}
+.buttons button {
+  margin-left: 1rem; /* Khoảng cách giữa các nút */
+}
+
+.button {
+  display: inline-block;
+  background-color: #0070f3;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0053cc;
+}

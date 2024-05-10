@@ -1,0 +1,41 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem; /* Điều chỉnh chiều cao của header theo nhu cầu */
+  padding: 0 1rem; /* Điều chỉnh padding theo nhu cầu */
+  background-image: url('/background.png'); /* Thay đổi đường dẫn đến hình nền */
+  background-size: cover; /* Đảm bảo hình nền được hiển thị đúng cách */
+  background-position: center; /* Đảm bảo hình nền được hiển thị đúng cách */
+  color: white;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Đảm bảo thông tin người dùng nằm bên phải */
+  gap: 0.5rem; /* Khoảng cách giữa các phần tử trong user-info */
+}
+
+.user-info span {
+  font-weight: bold;
+}
+
+.logout-button {
+  background-color: #ff4d4f; /* Màu nền của nút đăng xuất */
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem; /* Điều chỉnh khoảng cách giữa chữ và viền nút */
+  border: none;
+  border-radius: 0.25rem; /* Bo tròn viền nút */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Hiệu ứng khi hover vào nút */
+}
+
+.logout-button:hover {
+  background-color: #ff7875; /* Màu nền của nút đăng xuất khi hover */
+}
